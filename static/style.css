@@ -143,9 +143,23 @@ a:hover {
 }
 .mobile-image-text {
 	position: absolute;
-	color: #eee;
-	top: 80px;
-	left: 80px;
+	color: white;
+	background-color: black;
+	border-radius: 8px;
+	text-align: center;
+	width: 200px;
+	height: 72px;
+	top: 475px;
+	left: 150px;
+	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
+	opacity: 0;
+}
+
+.mobile-image-container .mobile-image-text.active {
+	opacity: 100;
 }
 
 .mobile-image-container .mobile-image.active {
