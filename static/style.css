@@ -93,6 +93,9 @@ a:hover {
 .navbar .navbar-items .lang a:first-child {
 	padding-right: 24px;
 }
+.navbar .navbar-items .lang a:last-child {
+	padding-left: 24px;
+}
 
 /* IMAGE SECTION */
 .image-container {
@@ -101,7 +104,7 @@ a:hover {
 	padding: 0;
 	margin: 0;
 }
-.image {
+.image-container .image {
 	object-fit: cover;
 	left: 0;
 	position: absolute;
@@ -113,8 +116,49 @@ a:hover {
 	opacity: 0;
 }
 
-.image.active {
+.image-container .image.active {
 	opacity: 100;
+}
+
+/* MOBILE IMAGE SECTION */
+.mobile-image-container {
+	display: none;
+	position: relative;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	height: 600;
+	width: 910;
+}
+.mobile-image-container .mobile-image {
+	object-fit: cover;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
+	opacity: 0;
+}
+.mobile-image-text {
+	position: absolute;
+	color: #eee;
+	top: 80px;
+	left: 80px;
+}
+
+.mobile-image-container .mobile-image.active {
+	opacity: 100;
+}
+
+@media (max-width: 600px) {
+	.image-container {
+		display: none;
+	}
+	.mobile-image-container {
+		display: block;
+	}
 }
 
 .button-container {
@@ -132,6 +176,7 @@ a:hover {
 	width: 100%;
 	font-size: 32px;
 	font-weight: 600;
+	top: 25%;
 }
 .button i {
 	padding-top: 32px;
@@ -140,12 +185,4 @@ a:hover {
 }
 .button p {
 	padding-top: 32px;
-}
-
-.left-button {
-	top: 10%;
-}
-
-.right-button {
-	top: 15%;
 }
