@@ -1,0 +1,151 @@
+/* MAIN */
+* {
+	padding: 0px;
+	margin: 0px;
+	outline: 0px;
+	border: 0px;
+	box-sizing: border-box;
+	list-style: none;
+	font-family: "Montserrat", sans-serif;
+}
+html {
+	overflow: hidden;
+	font-size: 16px;
+}
+a,
+a:hover {
+	text-decoration: none;
+	color: #000;
+}
+::selection {
+	background: #f1f1f1;
+	color: #292929;
+}
+::-webkit-scrollbar {
+	background: #292929;
+	width: 6px;
+}
+::-webkit-scrollbar-thumb {
+	background: #eee;
+}
+.container {
+	width: 100%;
+	padding-right: var(--bs-gutter-x, 0.75rem);
+	padding-left: var(--bs-gutter-x, 0.75rem);
+	margin-right: auto;
+	margin-left: auto;
+}
+
+@media (min-width: 576px) {
+	.container {
+		max-width: 540px;
+	}
+}
+@media (min-width: 768px) {
+	.container {
+		max-width: 720px;
+	}
+}
+@media (min-width: 992px) {
+	.container {
+		max-width: 960px;
+	}
+}
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1140px;
+	}
+}
+@media (min-width: 1400px) {
+	.container {
+		max-width: 1320px;
+	}
+}
+
+/* NAVBAR */
+.navbar .navbar-items {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: white;
+}
+.navbar .navbar-items a {
+	color: black;
+	font-weight: 600;
+	text-align: center;
+	text-decoration: none;
+}
+.navbar .navbar-items .logo {
+	padding: 32px 0px 32px 0px;
+	display: block;
+	float: left;
+	font-size: 2rem;
+	line-height: 2rem;
+}
+.navbar .navbar-items .lang {
+	padding: 32px 0px 32px 0px;
+	display: block;
+	float: right;
+	font-size: 1rem;
+	line-height: 2rem;
+}
+.navbar .navbar-items .lang a:first-child {
+	padding-right: 24px;
+}
+
+/* IMAGE SECTION */
+.image-container {
+	position: relative;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+.image {
+	object-fit: cover;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
+	opacity: 0;
+}
+
+.image.active {
+	opacity: 100;
+}
+
+.button-container {
+	position: relative;
+	height: 688px;
+}
+.button {
+	color: black;
+	position: absolute;
+	margin: 0 !important;
+	padding: 0 !important;
+	/* border: 0 !important; */
+	border-radius: 8px;
+	height: 196px;
+	width: 100%;
+	font-size: 32px;
+	font-weight: 600;
+}
+.button i {
+	padding-top: 32px;
+	height: 32px;
+	width: 32px;
+}
+.button p {
+	padding-top: 32px;
+}
+
+.left-button {
+	top: 10%;
+}
+
+.right-button {
+	top: 15%;
+}
