@@ -2,7 +2,7 @@ let coordinate = 0;
 let images = document.getElementsByClassName("image");
 let imagesLength = images.length;
 let intervalId = null;
-let autoplay = 5000;
+let autoplay = 3000;
 let counter = 0;
 
 intervalId = window.setInterval(() => {
