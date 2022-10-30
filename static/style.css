@@ -116,6 +116,27 @@ a:hover {
 	opacity: 0;
 }
 
+.image-text {
+	position: absolute;
+	color: white;
+	background-color: black;
+	border-radius: 8px;
+	text-align: center;
+	padding: 16px;
+	bottom: 10px;
+	right: 8px;
+	font-size: 12px;
+	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
+	opacity: 0;
+}
+
+.image-container .image-text.active {
+	opacity: 100;
+}
+
 .image-container .image.active {
 	opacity: 100;
 }
@@ -148,7 +169,7 @@ a:hover {
 	padding: 16px;
 	bottom: 10px;
 	right: 8px;
-	font-size: 16px;
+	font-size: 8px;
 	-webkit-transition: opacity 1s ease-in-out;
 	-moz-transition: opacity 1s ease-in-out;
 	-o-transition: opacity 1s ease-in-out;
