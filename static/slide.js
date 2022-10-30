@@ -18,4 +18,4 @@ slideInterval = window.setInterval(() => {
 		slide.remove();
 		clearInterval(slideInterval);
 	}
-}, 250);
+}, 500);
